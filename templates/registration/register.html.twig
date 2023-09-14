@@ -1,8 +1,21 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Register{% endblock %}
+{% form_theme registrationForm 'bootstrap_5_layout.html.twig' %}
 
 {% block body %}
+
+    {% set title = 'bar' %}
+    {% set subTitle = 'bar' %}
+    {% set elem1 = 'bar' %}
+    {% set elem2 = 'bar' %}
+    {% set elem3 = 'bar' %}
+    {% set elem4 = 'bar' %}
+    {% set button = 'Découvrir nos solutions' %}
+    {% include 'header/index.html.twig' %}
+
+
+
     {% for flash_error in app.flashes('verify_email_error') %}
         <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
     {% endfor %}
