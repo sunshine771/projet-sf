@@ -17,9 +17,12 @@
 
         {% include 'nav/index.html.twig' %}
 
-        <div class="container">
+        <div class="container-fluid px-0">
 
-        </div>
         {% block body %}{% endblock %}
+
+        {% include 'footer/index.html.twig' %}
+        </div>
+
     </body>
 </html>
