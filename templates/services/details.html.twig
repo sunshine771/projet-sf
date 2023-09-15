@@ -1,0 +1,168 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ServicesController!{% endblock %}
+
+{% block body %}
+{% set title = 'bar' %}
+{% set subTitle = 'bar' %}
+{% set elem1 = 'bar' %}
+{% set elem2 = 'bar' %}
+{% set elem3 = 'bar' %}
+{% set elem4 = 'bar' %}
+{% set button = 'Demander un devis' %}
+        {% include 'header/index.html.twig' %}
+
+        <div class=" col-md-12 white d-flex justify-content-center py-5">
+
+			<div class="col-12 col-md-8 row">
+				<div class="col-12 col-md-6">
+					<h2 class="text-dark"> {{service.title}} </h2>
+                        <p class="text-dark"> {{service.description}} </p>
+				</div>
+				<div class="col-12 col-md-6 row justify-content-end my-5 my-md-0">
+					<div class="icon-box col-md-10 bg-info py-4 px-3 d-flex flex-column justify-content-between form-shadow smallBorderRadius">
+
+						<ul class="d-flex h-100 flex-column justify-content-between">
+							<li class="d-flex align-items-center text-dark my-2 my-md-2">
+								<i class="fa-solid fa-suitcase me-2"></i>
+							job.contrac
+							</li>
+							<li class="d-flex align-items-center text-dark my-2 my-md-2">
+								<i class="fa-solid fa-money-bill me-2"></i>
+							 job.salary€
+							</li>
+							<li class="d-flex align-items-center text-dark my-2 my-md-2">
+								<i class="fa-solid fa-location-dot me-2"></i>
+							 job.location
+							</li>
+							<li class="d-flex align-items-center text-dark my-2 my-md-2">
+								<i class="fa-solid fa-calendar-xmark me-2"></i>
+							 job.date |date("m/d/Y")
+							</li>
+							<li class="d-flex align-items-center text-dark my-2 my-md-2">
+								<i class="fa-solid fa-clock me-2"></i>
+							 job.schedule
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
+                <div class="col-md-12 d-flex align-items-center justify-content-center mt-5">
+                    <button class="btn btn-outline-primary text-dark py-2 smallBorderRadius" data-bs-toggle="modal" data-bs-target="#article-social-networks"><i class="fa-solid fa-share me-2"></i> PARTAGER LE SERVICE </button>
+                    <a aria-label="Acceptez la mission - Formation WS" class="ms-3 text-dark smallBorderRadius colorWhite btn btn-outline-secondary pull-right border-radius-btn d-flex align-items-center" href"">
+                            <i class="far fa-play-circle me-2"></i>DEMANDER UN DEVIS</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="col-md-12 d-flex justify-content-center py-5">
+
+			<div class="col-md-6">
+				<div class="text-with-gradient text-center pB-5 relative">
+					&lt; NOTRE EQUIPE /&gt;
+				</div>
+
+				<h2 class="text-center text-dark mt-3">
+					BIENVENUE CHEZ ASD IN
+				</h2>
+                                <iframe width="560" height="315" src="{{service.video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>			</div>
+
+		</div>
+
+
+		<div class=" col-md-12 py-5 white" id="finalObjectives">
+
+			<div class="offset-md-3 col-md-8 d-flex flex-column">
+				<h4 class="mb-4 text-dark">
+					<i class="fa-solid fa-bullseye me-3"></i>
+					Nos principales missions :
+				</h4>
+				<p class="text-dark"> job.missionDescription </p>
+				<ul>
+
+                        <li class="text-dark">
+                            <i class="fas fa-check mx-3 text-dark"></i>
+                         mission
+                        </li>
+
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="bg-secondary col-md-12 py-5" id="process">
+
+			<div class="offset-md-3 col-md-8 d-flex flex-column">
+				<h4 class="mb-4 text-dark">
+					<i class="fa-solid fa-user-tie me-3"></i>
+					Profil recherché :
+				</h4>
+				<p class="text-dark"> job.profileDescription </p>
+				<ul class="text-dark">
+                        <li class="my-2">
+                            <i class="fas fa-check mx-3"></i>
+                         requirement
+                        </li>
+				</ul>
+
+
+				<h5 class="mt-4 fw600 font-italic text-dark">
+					Notre équipe de formateurs décortique chaque sujet pour vous offrir des formations ludiques et intéractives, facil d'accès.
+				</h5>
+			</div>
+
+		</div>
+
+		<div class=" col-md-12 py-5 white" id="public">
+
+			<div class="offset-md-3 col-md-8 d-flex flex-column">
+				<h4 class="mb-4 text-dark">
+					Informations :
+				</h4>
+				<ul class="text-dark">
+                        <li class="my-2">
+                            <i class="fas fa-check-circle mx-3"></i>
+                         information
+                        </li>
+				</ul>
+			</div>
+
+		</div>
+
+
+        <section class="bg-secondary justify-content-center align-items-center flex-column relative pb-5">
+
+
+            <div class="text-with-gradient text-center py-5 relative">
+                &lt; COLLABORONS ENSEMBLE /&gt;
+            </div>
+
+            <h2 class="text-center text-dark">
+                LES AVANTAGES POUR CE POSTE
+            </h2>
+
+
+            <div class="row mx-auto col-md-10 p-3" id="job-advantage">
+
+                    <div class="col-md-3 p-3">
+                        <div class="bg-none card p-4 form-shadow align-items-center">
+                            <a aria-label= advantage.title - Formation WS" class="pb-3" href=path('app_jobs_application', {id : job.id}">
+                         advantage.logo | raw
+                            </a>
+
+                            <div class="card-body p-0">
+                                <h5 class="card-title fw-bold text-dark text-center" advantage.title</h5>
+                                <p class="card-text text-info text-center" advantage.description</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </section>
+
+{% endblock %}
