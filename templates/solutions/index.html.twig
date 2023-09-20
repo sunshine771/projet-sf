@@ -4,17 +4,17 @@
 
 {% block body %}
 {% set title = 'Nos solutions' %}
-{% set subTitle = 'Découvrez nos services au sein de ASD' %}
-{% set elem1 = 'bar' %}
-{% set elem2 = 'bar' %}
-{% set elem3 = 'bar' %}
-{% set elem4 = 'bar' %}
+{% set subTitle = 'Découvrez nos services' %}
+{% set elem1 = 'Sécurité Aérienne' %}
+{% set elem2 = 'Réglementation et Conformité ' %}
+{% set elem3 = 'Technologie et Infrastructure' %}
+{% set elem4 = 'Gestion du Trafic Aérien' %}
 {% set button = 'Découvrir nos solutions' %}
         {% include 'header/index.html.twig' %}
 
         <div class="row justify-content-center p-5">
                 {% for service in services %}
-                        <div class="p-5 col-md-3">
+                        <div class="p-5 col-md-3 fw600">
                                 <div class="card" style="width: 18rem;">
                                         <img class="card-img-top" src="{{asset('services/' ~ service.picture)}}" alt="Card image cap">
                                         <div class="card-body">
