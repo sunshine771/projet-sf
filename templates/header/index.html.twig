@@ -4,13 +4,16 @@
             <h1 class="text-center text-white"> {{title}} </h1>
             <h2 class="text-center text-primary fw400"> {{subTitle}}  </h2>
         </div>
-
+         
         <div class="col-md-12">
-            <p class="text-center text-white"> {{elem1}} <span class="text-primary">//</span> {{elem2}} <span class="text-primary">//</span> {{elem3}} <span class="text-primary">//</span> {{elem4}}</p>
+        
+            <p class="text-center text-white"> {{elem1}} <span class="text-primary"> </span> {{elem2}}
+             <span class="text-primary"></span> {{elem3}} <span class="text-primary">//</span> {{elem4}}</p>
+          
         </div>
 
         <div class="col-md-12 d-flex justify-content-center">
-            <a aria-label="Nos vidéos" class="text-light smallBorderRadius colorWhite btn btn-secondary pull-right border-radius-btn mt-5 fw600 d-flex align-items-center" href=""><i class="far fa-play-circle me-2"></i>{{button}}</a>
+            <a aria-label="Nos vidéos" class="text-light smallBorderRadius colorWhite btn btn-secondary pull-right border-radius-btn mt-5 fw600 d-flex align-items-center" href="{{path('app_services')}}"><i class="far fa-play-circle me-2"></i>{{button}}</a>
         </div>
 
     </div>
