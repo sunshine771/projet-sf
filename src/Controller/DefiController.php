@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class EstimationController extends AbstractController
+class DefiController extends AbstractController
 {
-    #[Route('/estimation', name: 'app_estimation')]
+    #[Route('/defi', name: 'app_defi')]
     public function index(): Response
     {
-        return $this->render('estimation/index.html.twig', [
-            'controller_name' => 'EstimationController',
+        return $this->render('defi/index.html.twig', [
+            'controller_name' => 'DefiController',
         ]);
     }
 }
