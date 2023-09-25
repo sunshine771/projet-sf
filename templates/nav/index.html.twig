@@ -1,41 +1,41 @@
-<nav class="navbar align-items-start navbar-expand-lg bg-body-tertiary">
+<nav class="navbar align-items-start navbar-expand-lg bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"> {# <img src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://www.filepicker.io/api/file/cBTtVZh1SgmP0FG0qJ83" alt="DroneSec" srcset="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:120/https://www.filepicker.io/api/file/cBTtVZh1SgmP0FG0qJ83 2x"> #}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse text-white" style="color:white;" id="navbarSupportedContent">
       <ul class="d-flex justify-content-end w-100 navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{ path('app_home') }}">Accueil</a>
+          <a class="nav-link active text-light" aria-current="page" href="{{ path('app_home') }}">Accueil</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="{{ path('app_defi') }}">Le défi d'une mobilitée sécurisée</a>
+          <a class="nav-link text-light" href="{{ path('app_defi') }}">Le défi de sécurité</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ path('app_solutions') }}">Solutions</a>
+          <a class="nav-link text-light" href="{{ path('app_solutions') }}">Solutions</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Réalisations
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Systèmes de géofencing </a></li>
+            <li><a class="dropdown-item" href="#">Technologies de  <br>parachutage d'urgence </a></li>
+            {# <li><hr class="dropdown-divider"> 2EME Solution</li> #}
+            <li><a class="dropdown-item" href="#">Cryptographie et <br>sécurité des communications </a></li>
           </ul>
         </li>
-       
+      
         <li class="nav-item">
-          <a class="nav-link" href="{{ path('app_contact') }}">Contact</a>
+          <a class="nav-link text-light" href="{{ path('app_contact') }}">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-lg bg-primary text-light nav-link" href="{{ path('app_login') }}">Connexion</a>
+          <a class="btn btn-lg  text-light nav-link" href="{{ path('app_login') }}">Connexion</a>
         </li>
         <br>
         <li class="nav-item">
-          <a class="btn btn-lg bg-danger text-light nav-link" href="{{ path('app_register') }}">Inscrire</a>
+          <a class="btn btn-lg text-light nav-link" href="{{ path('app_register') }}">Inscrire</a>
         </li>
       </ul>
 
