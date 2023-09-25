@@ -4,18 +4,29 @@ ul {
   list-style: none;
 }
 
-h1 {
-  text-transform: capitalize;
+
+ .py-5 { 
+  font-weight: bolder;
+  color: rgb(17, 77, 116);
+}
+
+.defis {
+  font-weight: bolder;
 }
 a {
   text-decoration: none;
   color: darkblue;
 }
-
+strong {
+  font-size : 70px;;
+}
 
 .px-5 {
 font-size: 20px;
+color: white;
 }
+
+
 
 
 
