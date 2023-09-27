@@ -14,11 +14,14 @@
 {% set elem4 = 'bar' %}
 {% set button = 'Découvrir nos solutions' %}
 
-        {% include 'header/index.html.twig' %}
+        {# {% include 'header/index.html.twig' %} #}
+        
 
             {{ form_start(contact_form, {"attr": {"class": "col-md-12 row px-5 py-5 justify-content-center" } }) }}
                 <div class="col-md-12">
-                    <h1 class="h3 mb-3 font-weight-normal text-center">Contactez-nous</h1>
+                    <h1 class=" mb-3  text-center">Contactez-Nous</h1> <br>
+                    <h2 class=" h4 font-weight-normal text-center">Veuillez compléter le formulaire ci-dessous, nous traiterons votre demande <br> dans les plus brefs délais</h2>
+
                 </div>
 
             {{ form_end(contact_form) }}
