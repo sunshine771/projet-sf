@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Entity\Realisations;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -13,6 +15,15 @@ class RealisationsController extends AbstractController
     {
         return $this->render('realisations/index.html.twig', [
             'controller_name' => 'RealisationsController',
+        ]);
+    }
+
+    #[Route('/realisations/{id}', name: 'app_realisations_details')]
+    public function getDetails(EntityManagerInterface $doctrine, String $id): Response
+    {
+        $realisation = $doctrine->getRepository(Realisations::class)->find($id);
+        return $this->render('realisations/details.html.twig', [
+            'realisation' => $realisation,
         ]);
     }
 }

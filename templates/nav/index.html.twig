@@ -20,11 +20,13 @@
             Réalisations
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Systèmes de géofencing </a></li>
-            <li><a class="dropdown-item" href="#">Technologies de  <br>parachutage d'urgence </a></li>
-            {# <li><hr class="dropdown-divider"> 2EME Solution</li> #}
-            <li><a class="dropdown-item" href="#">Cryptographie et <br>sécurité des communications </a></li>
+          {% for realisation in realisations %}
+            <li><a class="dropdown-item" href="{{path('app_realisations_details', {id : realisation.id})}}">{{realisation.title}} </a></li>
+            {#<li><a class="dropdown-item" href="#">Technologies de  <br>parachutage d'urgence </a></li>
+            <li><a class="dropdown-item" href="#">Cryptographie et <br>sécurité des communications </a></li>#}
+          {% endfor %}
           </ul>
+
         </li>
       
         <li class="nav-item">
