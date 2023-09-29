@@ -1,74 +1,82 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}DefiController!{% endblock %}
+{% block title %}DefiController!
+{% endblock %}
 
 {% block body %}
-<style>
-    /* .example-wrapper { margin: 1em auto; max-width: 800px; width: 20%; font: 18px/1.5 sans-serif; color:red; } */
-    .title { margin:auto; width: 100%; color:rgb(17, 77, 116);padding-top: 100px; }
-     h1 { font: 4rem sans-serif;}
-     /* h3{ text-align:center;} */
-     .defi {text-align: left; border: 1px solid rgba(0,0,0,.08);border-radius: 4px;
-     justify-content: space-between;
-     flex-direction: column;
-     color:rgb(255, 255, 255);
-     padding: 25px 20px;
-     position: relative;
-     display: block;}
+	<style>
+		/* .example-wrapper { margin: 1em auto; max-width: 800px; width: 20%; font: 18px/1.5 sans-serif; color:red; } */
+		.title {
+			margin: auto;
+			width: 100%;
+			color: rgb(17, 77, 116);
+			padding-top: 100px;
+		}
+		h1 {
+			font: 4rem sans-serif;
+		}
+		/* h3{ text-align:center;} */
 
-     .mid{
-    background-color:rgb(16, 20, 32);
-    
-
-     }
-
-   
-</style>
-
-<div class="title text-center">
-    <h1>Naviguer l'avenir </h1>
-     <h3>Défis et Opportunités des Mobilités Aériennes sans Pilote</h3>
-</div>
-<br>
-<br>
-<br>
+		.mid {
+			background-color: rgb(16, 20, 32);
 
 
+		}
+	</style>
 
-<div class="mid">
-<div class=" d-flex p-5">
-<div class="defi"> 
-<h3>Potentiel d'innovation et de croissance économique</h3>  <br> Les technologies des drones présentent un immense potentiel d'innovation dans de nombreux secteurs, notamment l'agriculture, la surveillance, la logistique, la cartographie, la recherche et le sauvetage, la livraison, etc. En investissant dans ce domaine, les pays peuvent stimuler la croissance économique, créer de nouveaux emplois et favoriser l'émergence de nouvelles entreprises.</div>
-<div class="defi"> 
-<h3> Amélioration de la sécurité publique </h3>  <br>  Les drones peuvent être utilisés pour des missions de surveillance, de recherche et de sauvetage, de lutte contre les incendies de forêt, de surveillance des frontières, et bien d'autres encore. Ils permettent d'améliorer la sécurité publique en fournissant des informations en temps réel et en accélérant les opérations de secours.</div>
-<div class="defi"> <h3> Développement de la technologie autonome</h3>  <br> Les drones sans pilote sont une composante essentielle du développement de la technologie autonome. Les progrès réalisés dans ce domaine peuvent se répercuter sur d'autres secteurs, notamment les véhicules autonomes, l'intelligence artificielle et la robotique. </div>
-
-
-</div>
-<br>
-<br>
-
-<div class=" d-flex p-5">
-<div class="defi"> <h3>Révolution de la mobilité </h3>
-<br><br> L'intégration des drones dans les systèmes de transport peut révolutionner la mobilité en offrant des options de déplacement plus rapides, plus flexibles et plus écologiques, notamment dans les zones urbaines congestionnées.</div>
-
-<div class="defi"> <h3> Réduction des coûts et de l'empreinte carbone </h3> <br>L'utilisation de drones pour des tâches telles que la livraison de colis ou l'inspection de sites industriels peut réduire les coûts opérationnels et l'impact environnemental par rapport aux méthodes traditionnelles nécessitant des véhicules motorisés.</div>
-<div class="defi"> <h3> Sécurité nationale et défense</h3> <br><br>  Les drones ont un rôle important à jouer dans la sécurité nationale et la défense, qu'il s'agisse de surveillance des frontières, de collecte de renseignements ou de missions de reconnaissance. Ils peuvent être utilisés pour protéger les intérêts nationaux.</div>
+	<div class="title text-center">
+		<h1>Naviguer l'avenir
+		</h1>
+		<h3>Défis et Opportunités des Mobilités Aériennes sans Pilote</h3>
+	</div>
+	<br>
+	<br>
+	<br>
 
 
-</div>
+	<div class="mid">
+		<div class="row p-5">
+			<div class="text-light  col-md-4 defi">
+				<h3>Potentiel d'innovation et de croissance économique</h3>
+				<br>
+				Les technologies des drones présentent un immense potentiel d'innovation dans de nombreux secteurs, notamment l'agriculture, la surveillance, la logistique, la cartographie, la recherche et le sauvetage, la livraison, etc. En investissant dans ce domaine, les pays peuvent stimuler la croissance économique, créer de nouveaux emplois et favoriser l'émergence de nouvelles entreprises.</div>
+			<div class="text-light  col-md-4 defi">
+				<h3>
+					Amélioration de la sécurité publique
+				</h3>
+				<br>
+				Les drones peuvent être utilisés pour des missions de surveillance, de recherche et de sauvetage, de lutte contre les incendies de forêt, de surveillance des frontières, et bien d'autres encore. Ils permettent d'améliorer la sécurité publique en fournissant des informations en temps réel et en accélérant les opérations de secours.</div>
+			<div class="text-light  col-md-4 defi">
+				<h3>
+					Développement de la technologie autonome</h3>
+				<br>
+				Les drones sans pilote sont une composante essentielle du développement de la technologie autonome. Les progrès réalisés dans ce domaine peuvent se répercuter sur d'autres secteurs, notamment les véhicules autonomes, l'intelligence artificielle et la robotique.
+			</div>
+		</div>
+		<br>
+		<br>
+
+		<div class="row p-5">
+			<div class="text-light col-md-4 defi">
+				<h3>Révolution de la mobilité
+				</h3>
+				<br><br>
+				L'intégration des drones dans les systèmes de transport peut révolutionner la mobilité en offrant des options de déplacement plus rapides, plus flexibles et plus écologiques, notamment dans les zones urbaines congestionnées.</div>
+
+			<div class="text-light col-md-4 defi">
+				<h3>
+					Réduction des coûts et de l'empreinte carbone
+				</h3>
+				<br>L'utilisation de drones pour des tâches telles que la livraison de colis ou l'inspection de sites industriels peut réduire les coûts opérationnels et l'impact environnemental par rapport aux méthodes traditionnelles nécessitant des véhicules motorisés.</div>
+			<div class="text-light col-md-4 defi">
+				<h3>
+					Sécurité nationale et défense</h3>
+				<br><br>
+				Les drones ont un rôle important à jouer dans la sécurité nationale et la défense, qu'il s'agisse de surveillance des frontières, de collecte de renseignements ou de missions de reconnaissance. Ils peuvent être utilisés pour protéger les intérêts nationaux.</div>
+		</div>
 
 
-
-</div>
-
-
-
-
-
-
-
-
+	</div>
 
 
 {% endblock %}
