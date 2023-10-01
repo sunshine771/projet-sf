@@ -14,9 +14,11 @@
 
         <div class="row justify-content-center p-5">
                 {% for service in services %}
-                        <div class="p-5 col-md-3 fw600">
+                        <div class="p-5 col-md-4 fw600">
                                 <div class="card" style="width: 18rem;">
-                                        <img class="card-img-top" src="{{asset('images/services/drone au nature.png' ~ service.picture)}}" alt="Card image cap">
+                                        <img class="card-img-top" src="{{asset('images/' ~ service.picture)}}"
+                                        
+                                         alt="Card image cap">
                                         <div class="card-body">
                                                 <h5 class="card-title">{{ service.name }}</h5>
                                                 <p class="card-text">{{service.description}}</p>
