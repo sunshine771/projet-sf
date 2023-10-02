@@ -12,7 +12,14 @@
 {# {% set button = 'Découvrir nos solutions' %} #}
         {% include 'header/index.html.twig' %}
 
-        <div class="container">
+        <style>
+        
+        body{
+                background-color:rgb(9, 15, 24);
+        }
+        </style>
+
+        <div class="container ">
           <div class="row justify-content-center py-5">
                 {% for service in services %}
                         <div class="p-5 col-md-4 fw600">
@@ -23,7 +30,7 @@
                                         <div class="card-body">
                                                 <h5 class="card-title">{{ service.name }}</h5>
                                                 <p class="card-text">{{service.description}}</p>
-                                                <a href="{{path('app_services_details', { id : service.id })}}" class="btn btn-primary">Accéder au détail du service</a>
+                                                {# <a href="{{path('app_services_details', { id : service.id })}}" class="btn btn-primary">Accéder au détail du service</a> #}
                                         </div>
                                 </div>
                         </div>
